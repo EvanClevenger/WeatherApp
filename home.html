@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP!!!!</title>
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/stlye.css">
+    
+</head>
+<body>
+
+<center>
+    <h1 class ="header">5 Day Weather Forcast</h1>
+</center>
+
+<section class="container-fluid" style="height: 300px width=300px;">
+    <div class= "row d-flex h-100" id="search-weather-section">
+        <div class="col-md-3">
+            <div class="card d-flex border-dark">
+                <form id="search-form">
+                <h3 class="card-header" style="background-color:#a83578"> Search for a City: </h3>
+                <div id="error-display"></div>
+                <input type="text" class="form-control card-body" id="search-input">
+                    <button type="button" class="btn btn-primary btn-xs btn-block" id="search-btn">Search</button>
+                </form>
+            </div>
+        </div>
+        <section class="col-md-7 weather-display-section"> 
+            <div class="card d-flex border-dark">
+                <h3 class="card-header text-center" style="background-color:#a83578;" id="todays-weather"></h3>
+                <div class=card-body>
+                    <p id= "city-date"></p>
+                    <p id="temp"> </p> 
+                    <p id = "feels-like" ></p>
+                    <p id = "wind"></p>
+                    <p id = "humidity"></p>
+                    <p id = "UV-index"></p>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+<section class="col-md-7 weather-display-section"> 
+    <div class="card d-flex border-dark">
+        <h3 class="card-header text-center" style="background-color:#a83578;" id="todays-weather"></h3>
+        <div class=card-body>
+            <p id= "city-date"></p>
+            <p id="temp"> </p> 
+            <p id = "feels-like" ></p>
+            <p id = "wind"></p>
+            <p id = "humidity"></p>
+            <p id = "UV-index"></p>
+        </div>
+    </div>
+</section>
+</div>
+</section>
+</div>
+
+<section class="container-fluid history-forecast-section" style="height:300px" >
+<div class="row d-flex h-100" id= "search-forecast-section">
+<section class="col-md-3"> 
+    <div class="card d-flex h-100 border-dark" id= "search-history-section">
+    <h4 class="card-header" style="background-color:#a83578"> Search History </h4>
+        <div class="card-body" id="search-history-list"> 
+        </div>
+    </div>
+</section>
+
+<section class= "col-md-7" id="forecast-section"> 
+    <div class="card d-flex h-100 w-100 border-dark">
+        <h4 class="card-header" style="background-color:#a83578;">5 Day Forecast:</h4>
+        <div class=" card-deck d-flex h-75 w-75;">
+            <div class="card" id="day-1"></div>
+            <div class="card" id="day-2"></div>
+            <div class="card" id="day-3"></div>
+            <div class="card" id="day-4"></div>
+            <div class="card" id="day-5"></div>
+        </div>
+    </div>    
+</section>
+</div>
+</section>
+</main>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./assets/index.js"></script>
+</body>
+</html>
